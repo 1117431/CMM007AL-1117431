@@ -69,14 +69,55 @@ $result = mysqli_query($db,$sql);
     if($_GET[category]== 'work'){
         // this happens if the value is 'work'
         echo "This is all for work category:";
+
+        $sql = "SELECT * FROM blogview WHERE category='work'";   //sql statement to display info as requested
+        $result = mysqli_query($db,$sql);
+
+        while ($row = $result -> fetch_array())
+        {
+            echo "<tr>";
+            echo "<td>" . $row['blogitemID'] . "</td>";
+            echo "<td>" . $row['entryTitle'] . "</td>";
+            echo "<td>" . $row['entrySummary'] . "</td>";
+            echo "<td>" . $row['category'] . "</td>";
+            echo "<td>" . $row['submitter'] . "</td>";
+            echo "</tr>";
+        }
+
     }
 
     elseif($_GET[category]== 'university'){
-        echo "This is all for university category:$_GET[category]";
+        echo "This is all for university category:";
+        $sql = "SELECT * FROM blogview WHERE category='university'";   //sql statement to display info as requested
+        $result = mysqli_query($db,$sql);
+
+        while ($row = $result -> fetch_array())
+        {
+            echo "<tr>";
+            echo "<td>" . $row['blogitemID'] . "</td>";
+            echo "<td>" . $row['entryTitle'] . "</td>";
+            echo "<td>" . $row['entrySummary'] . "</td>";
+            echo "<td>" . $row['category'] . "</td>";
+            echo "<td>" . $row['submitter'] . "</td>";
+            echo "</tr>";
+        }
     }
 
     elseif($_GET[category]== 'family'){
-        echo "This is all for family category: $_GET[category]";
+        echo "This is all for family category: ";
+        $sql = "SELECT * FROM blogview WHERE category='category'";   //sql statement to display info as requested
+        $result = mysqli_query($db,$sql);
+
+        while ($row = $result -> fetch_array())
+        {
+            echo "<tr>";
+            echo "<td>" . $row['blogitemID'] . "</td>";
+            echo "<td>" . $row['entryTitle'] . "</td>";
+            echo "<td>" . $row['entrySummary'] . "</td>";
+            echo "<td>" . $row['category'] . "</td>";
+            echo "<td>" . $row['submitter'] . "</td>";
+            echo "</tr>";
+        }
     }
 
     else{
