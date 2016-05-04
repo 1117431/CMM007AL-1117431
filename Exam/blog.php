@@ -35,9 +35,9 @@ $result = mysqli_query($db,$sql);
 <body>
 <main>
 <!-- unsure of body content so did as i was advised.-->
-<h1>myBlog</h1>
+<h1align="center">myBlog</h1>
 
-<h2>Display All Blog Entries</h2>
+<h2 align="center">Display All Blog Entries</h2>
 
     <div class="allblogs">
         <a href="index.html" id="allblogs">Home</a>
