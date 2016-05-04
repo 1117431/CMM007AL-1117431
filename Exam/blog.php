@@ -67,30 +67,8 @@ $result = mysqli_query($db,$sql);
     <?php
 //this is to organise the get function - not sure if it should be on the php page or the normal html page
     if($_GET[category]== 'work'){
-        // this happens if the value is 'earth'
+        // this happens if the value is 'work'
         echo "This is all for work category:";
-    ?>
-        <table>
-        <tr>
-            <th>Blog Item ID</th>
-            <th>Entry Title</th>
-            <th>Entry Summary</th>
-            <th>Category</th>
-            <th>Submitter</th>
-        </tr>
-        <?php
-        while ($row = $result -> fetch_array())
-        {
-            echo "<tr>";
-            echo "<td>" . $row['blogitemID'] . "</td>";
-            echo "<td>" . $row['entryTitle'] . "</td>";
-            echo "<td>" . $row['entrySummary'] . "</td>";
-            echo "<td>" . $row['category'] . "</td>";
-            echo "<td>" . $row['submitter'] . "</td>";
-            echo "</tr>";
-        }
-        ?>
-    </table>
     }
 
     elseif($_GET[category]== 'university'){
