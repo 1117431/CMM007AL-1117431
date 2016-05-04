@@ -66,7 +66,9 @@ input {
 #button{
     float: right;
 }
-
+table, th, td {
+    border: 1px solid black;
+}
 .blogview {
     text-align: center;
     width: 100px;
