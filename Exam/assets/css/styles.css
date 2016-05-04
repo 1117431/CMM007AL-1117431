@@ -1,6 +1,7 @@
 nav ul li {
     display: inline;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a:link {
