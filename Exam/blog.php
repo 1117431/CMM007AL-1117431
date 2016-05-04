@@ -35,7 +35,7 @@ $result = mysqli_query($db,$sql);
 <body>
 <main>
 <!-- unsure of body content so did as i was advised.-->
-<h1align="center">myBlog</h1>
+<h1 align="center">myBlog</h1>
 
 <h2 align="center">Display All Blog Entries</h2>
 
