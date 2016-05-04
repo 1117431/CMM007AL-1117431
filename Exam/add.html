@@ -28,20 +28,35 @@
 
 <body>
 <main class="grid-container">
+    <!-- This script is used to validate the entry for the 3 require fields-->
+    <script type="text/javascript">
+        function validateForm()
+        {
+            var a=document.forms["Form"]["title"].value;
+            var b=document.forms["Form"]["category"].value;
+            var c=document.forms["Form"]["summary"].value;
+
+            if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="")
+            {
+                alert("Please Fill All Required Field");
+                return false;
+            }
+        }
+    </script>
     <!-- start of the form called signup wired in a div incase i neee to modify it-->
     <div id="signupbox">
-        <form name="signup" action="index_submit" method="get">
+        <form name="signup" action="index_submit" method="get" onsubmit="return validate()">
             <fieldset>
-                <!-- Input selection menu-->
+                <!-- Input selection menu which is required-->
                 <p><label for="title">Entry Title:</label>
                     <input type="text" name="title" placeholder="Enter your Title?" required></p>
-                <!-- Input selection menu-->
+                <!-- Input selection menu which is required-->
                 <p><label for="summary">Entry Summary:</label>
                     <textarea name="summary" cols="45" rows="5" required>
                     </textarea></p>
                 <!-- Drop down selection option menu-->
                 <label for="category">Category:</label>
-                <p><select name="category">
+                <p><select name="category" required>
                     <option value="">Select Category</option>
                     <option value="work">Work</option>
                     <option vaule="university">Univeristy</option>
@@ -49,7 +64,7 @@
                 </select></p>
                 <!-- Input selection menu-->
                 <p><label for="submittedby">Submitted By:</label>
-                    <input type="text" name="password" required></p>
+                    <input type="text" name="password" ></p>
 
                 <input type="submit" value="Submit" id="button">
             </fieldset>
