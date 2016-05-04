@@ -1,6 +1,6 @@
 nav ul li {
     display: inline;
-    padding-right: 20px;
+
 }
 
 a:link {
@@ -37,4 +37,5 @@ footer {
     height: 50px;
     width: 960px;
     margin: 0 auto;
+    padding-left: 20px;
 }
