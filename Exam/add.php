@@ -43,8 +43,8 @@
             }
         }
     </script>
-    <!-- start of the form to check if its a get or post or do nothing
 
+    <!-- This is used to get information from the user using the get function-->
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'GET'){ //Execute if requested using http get method
    ?>
@@ -81,7 +81,7 @@
         $summary =$_POST["entrySummary"];
         $category =$_POST["category"];
         $submitter =$_POST["submitter"];
-        print("<h1>You have entered</h1> {$title} {$summary} {$category} and you are {$submitter}")
+        print("<h1>You have entered</h1> {$title} {$summary} {$category} and you are {$submitter}");
     }
 }   else{
         echo "Please try again";
