@@ -66,19 +66,19 @@ $result = mysqli_query($db,$sql);
 
     <?php
 //this is to organise the get function - not sure if it should be on the php page or the normal html page
-    if($_GET[category]== 'work'){
+    if($_GET[category]== 'Work'){
         //// this happens if the value is 'earth'
 
-        echo "This is all for work category <br> [category]";
+        echo "This is all for work category: <br> [category]";
 
     }
 
-    elseif($_GET[category]== 'university'){
-        echo "This is all for university category <br> [category]";
+    elseif($_GET[category]== 'University'){
+        echo "This is all for university category: <br> [category]";
     }
 
-    elseif($_GET[category]== 'family'){
-        echo "This is all for family category <br> [category]";
+    elseif($_GET[category]== 'Family'){
+        echo "This is all for family category: <br> [category]";
     }
 
     else{
