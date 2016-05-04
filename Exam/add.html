@@ -25,32 +25,35 @@
 </header>
 <!-- end of header-->
 
-<!-- start of body using unsemantic gridding to get ccs in place-->
+
 <body>
 <main class="grid-container">
-
+    <!-- start of the form called signup wired in a div incase i neee to modify it-->
     <div id="signupbox">
         <form name="signup" action="index_submit" method="get">
             <fieldset>
+                <!-- Input selection menu-->
                 <p><label for="title">Entry Title</label>
                     <input type="text" name="title" placeholder="Enter your Title?" required></p>
-
+                <!-- Input selection menu-->
                 <p><label for="summary">Entry Summary</label>
-                    <textarea name="summary" cols="45" rows="5">
+                    <textarea name="summary" cols="45" rows="5" required>
                     </textarea></p>
-
+                <!-- Drop down selection option menu-->
+                <label for="category">Category:</label>
                 <p><select name="category">
                     <option value="">Select Category</option>
                     <option value="politics">Politics</option>
                     <option vaule="sport">Sport</option>
                     <option vaule="technology">Technology</option>
                 </select></p>
-
+                <!-- Input selection menu-->
                 <p><label for="submittedby">Submitted BY</label>
                     <input type="text" name="password" required></p>
 
                 <input type="submit" value="Submit">
             </fieldset>
+            <!-- using fieldset to wrap ofrm-->
         </form>
     </div>
 

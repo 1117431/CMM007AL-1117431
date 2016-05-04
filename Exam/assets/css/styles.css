@@ -1,5 +1,4 @@
 
-
 nav ul li {
     display: inline;
     padding-right: 20px;
@@ -38,4 +37,28 @@ footer {
     background-color: #363636;
     height: 50px;
     padding-left: 20px;
+}
+
+#signupbox {
+    width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 500px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+label {
+    text-align: right;
+    width: 100px;
+    float: left;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
 }
