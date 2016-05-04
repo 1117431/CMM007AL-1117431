@@ -61,5 +61,8 @@ label {
 
 input {
     width: 250px;
+}
 
+#button{
+    float: right;
 }
